@@ -1,0 +1,24 @@
+ B11:
+	BeginFunc‬‬
+	y = 15  
+	if x == 140 Goto _L0
+	Goto _L1
+   _L0: y = 14  
+	Goto _L2
+   _L1: y = 13  
+   _L2: t0 = x + y
+	return t0   
+	EndFunc
+ Main:
+	BeginFunc‬‬
+	a = 12  
+   _L3: if a < 100 Goto _L4
+	Goto _L5
+   _L4: PushParam 11
+	t1 = LCALL B11
+‪	PopParams 4‬‬‬‬
+	b = t1  
+	t2 = a + b
+	a = t2  
+	Goto _L3
+   _L5: EndFunc

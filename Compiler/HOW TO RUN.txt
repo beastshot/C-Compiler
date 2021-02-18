@@ -1,0 +1,10 @@
+
+HOW TO RUN THE CODE:
+
+lex project.l
+
+yacc -d project.y
+
+cc -o project y.tab.c -ll -Ly
+
+./project<h.t
